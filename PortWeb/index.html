@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEL Investigation | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="nav-item magnetic" data-target="welcome-view" title="Welcome"><i class="ph ph-house"></i></div>
+        <div class="nav-item magnetic" data-target="inspiration-view" title="Inspiration"><i class="ph ph-lightbulb"></i></div>
+        <div class="nav-item magnetic" data-target="projects-view" title="Projects"><i class="ph ph-folder"></i></div>
+        <div class="nav-item magnetic" data-target="gallery-view" title="Gallery"><i class="ph ph-image"></i></div>
+        <div class="nav-item magnetic" data-target="cv-view" title="CV/Resume"><i class="ph ph-file-text"></i></div>
+        <div class="nav-item magnetic" data-target="ending-view" title="Ending"><i class="ph ph-flag-checkered"></i></div>
+    </nav>
+
+    <main class="dashboard">
+        
+        <div id="welcome-view" class="view">
+            <section class="welcome-section fade-in">
+                <div class="welcome-content">
+                    <h1 class="welcome-text">
+                        This portfolio serves as a comprehensive record of my practical experience, technical competencies, and creative developments.
+                        <span class="sub-text">Please navigate utilizing the sidebar or the quick directories provided.</span>
+                    </h1>
+                    
+                    <div class="quick-summary">
+                        <h2 class="section-title summary-title">Quick-Summary:</h2>
+                        <div class="summary-item summary-fade">
+                            <i class="ph ph-user"></i><span>Enriko Straubis</span>
+                        </div>
+                        <div class="summary-item summary-fade">
+                            <i class="ph ph-calendar-blank"></i><span>16 years of age</span>
+                        </div>
+                        <div class="summary-item summary-fade">
+                            <i class="ph ph-crosshair"></i><span>Preferred career role: 3D Interior Design & Video Game Technical Design</span>
+                        </div>
+                        <div class="summary-item summary-fade">
+                            <i class="ph ph-graduation-cap"></i><span>Applied to: BTEC L2 Art & Design</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="shortcuts-section fade-in">
+                <h2 class="section-title">Go to:</h2>
+                <div class="shortcut-box magnetic" data-target="cv-view">CV</div>
+                <div class="shortcut-box magnetic" data-target="projects-view">Projects</div>
+                <div class="shortcut-box magnetic" data-target="gallery-view">Gallery</div>
+            </aside>
+
+            <section class="highlights-section fade-in">
+                <h2 class="section-title">Visual Highlights</h2>
+                <div class="gallery-grid">
+                    <div class="img-container"><img src="assets/staff_lounge1.png" alt="Staff Lounge"></div>
+                    <div class="img-container"><img src="assets/entrance_lobby1.png" alt="Entrance Lobby"></div>
+                    <div class="img-container"><img src="assets/infinite_hallway1.png" alt="Infinite Hallway"></div>
+                </div>
+            </section>
+        </div>
+
+        <div id="inspiration-view" class="view">
+            <section class="text-column">
+                <h1 class="section-header fade-in">Inspirations & Learning Assets</h1>
+                <p class="body-text fade-in">My foundational interest in interactive digital environments began in my early teens through tactical simulations such as <em>Tom Clancy's Rainbow Six Siege</em>. Initially engaging as an end-user, my perspective shifted toward backend development and systems architecture as my programming proficiencies matured.</p>
+                <p class="body-text fade-in">I began critically analyzing environment design—specifically, asking whether asset quality could be strictly optimized for User Experience (UX) without compromising visual fidelity, and how the spatial orientation of in-game props dictates user interaction. To expand my technical understanding, I studied the methodologies of industry-focused developers, notably <strong>@SebastianLague</strong> and <strong>@DevDuck</strong>.</p>
+                
+                <div class="creator-grid fade-in">
+                    <div class="creator-card">
+                        <img src="assets/sebastian.png" alt="Sebastian Lague" class="creator-img">
+                        <div class="creator-info"><span class="creator-name">@SebastianLague</span><i class="ph-fill ph-youtube-logo youtube-icon"></i></div>
+                    </div>
+                    <div class="creator-card">
+                        <img src="assets/devduck.png" alt="DevDuck" class="creator-img">
+                        <div class="creator-info"><span class="creator-name">@DevDuck</span><i class="ph-fill ph-youtube-logo youtube-icon"></i></div>
+                    </div>
+                </div>
+
+                <p class="body-text fade-in">These developers were recommended by academic peers for their technical rigor, graphical fidelity, and transparent breakdowns of complex rendering pipelines. Integrating their methodologies into my own learning process was instrumental in bridging the gap between theoretical programming and practical application.</p>
+                <p class="body-text fade-in">However, the primary catalyst for my current trajectory was the tactical simulator <em>Ready or Not</em>. I was deeply fascinated by the developers' ability to optimize heavily AI-dependent systems while maintaining photorealistic environments and seamless performance that mirrors real-life scenarios.</p>
+
+                <a href="https://en.wikipedia.org/wiki/Ready_or_Not_(video_game)" target="_blank" class="horizontal-link-card fade-in">
+                    <div class="thumb-container"><img src="assets/readyornot.png" alt="Ready or Not"></div>
+                    <div class="card-text-content">
+                        <span class="card-title">Ready or Not</span>
+                        <span class="card-sub">Technical & Architectural Inspiration</span>
+                    </div>
+                    <i class="ph-fill ph-steam-logo card-icon"></i>
+                </a>
+
+                <p class="body-text fade-in">This analytical study culminated in the development of my own architectural and technical project, <em>CallSignDJ</em>. It synthesizes the technical optimization strategies I researched and applies them to an entirely original, custom-built setting.</p>
+
+                <div class="internal-link-btn fade-in" data-target="projects-view">
+                    <i class="ph ph-folder-open"></i><span>View Project: CallSignDJ</span><i class="ph ph-arrow-right arrow"></i>
+                </div>
+            </section>
+        </div>
+
+        <div id="projects-view" class="view">
+            <section class="text-column wide-column">
+                <h1 class="section-header fade-in">Projects & Works</h1>
+                
+                <p class="body-text fade-in">
+                    This section details my applied technical expertise and practical portfolio. While I possess functional proficiency across various industry-standard 3D modeling pipelines (including specialized CAD applications, Blender, Autodesk Maya, and 3ds Max), my primary specialization is comprehensive, full-stack game development.
+                </p>
+
+                <div class="project-block fade-in">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="ph ph-game-controller project-icon"></i>
+                            <h2 class="project-title">CallSignDJ (001)</h2>
+                        </div>
+                        <p class="body-text">
+                            Developed actively within Unreal Engine 5 utilizing a hybrid architecture of C++ and Blueprint visual scripting to provide logic and structural optimization, <em>CallSignDJ (001)</em> is a tactical simulation heavily inspired by the technical frameworks of <em>Ready or Not</em>. 
+                        </p>
+                        <p class="body-text">
+                            <strong>Narrative & Architecture:</strong> Set against a geopolitical backdrop of global hostility in 2029, the narrative centers on the formation of the United Nations Military Operations Command (UNMOC). The user assumes the role of Sgt. M. Grayves, a pivotal operative within the Special Surveillance and Reconnaissance Regiment (Team-OC-BOG; Callsign-DJ, Designation: 254-00-34-UN-MOc2, Section 2:1 SpecOps).
+                        </p>
+                        <p class="body-text">
+                            The core objective is the mitigation of global tension through dynamic, multi-faceted operational branches:
+                        </p>
+                        <ul class="project-list">
+                            <li>Peacekeeping Operations</li>
+                            <li>Emergency Government Support</li>
+                            <li>Direct Action</li>
+                            <li>Comprehensive Intelligence (SIGINT, HUMINT)</li>
+                            <li>Critical Counter-Terrorism</li>
+                        </ul>
+                    </div>
+                    <div class="project-media">
+                        <img src="assets/shop_photo_CDJ001.png" alt="CallSignDJ 001">
+                    </div>
+                </div>
+
+                <hr class="project-divider fade-in">
+
+                <div class="project-block fade-in reverse-layout">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="ph ph-game-controller project-icon"></i>
+                            <h2 class="project-title">Damn You, Manager!</h2>
+                        </div>
+                        <p class="body-text">
+                            <em>Damn You, Manager! (DYM!)</em> was conceptualized as a first-person simulation juxtaposing stylized, cartoonish mechanics against a photorealistic nightclub environment. The project was ultimately archived due to a critical analysis of its structural limitations regarding long-term mechanical scaling and project scope.
+                        </p>
+                        <p class="body-text">
+                            <strong>Conceptual Framework:</strong> The simulation placed the user as Dan Brockner, a 19-year-old newly appointed nighttime manager at 'Paradi' nightclub. The core loop involved executing daily operational duties and managing unpredictable customer behavior.
+                        </p>
+                        <p class="body-text">
+                            The design pipeline scaled the difficulty over a simulated day. Successful completion of tiered quests rewarded the player with vertical progression, moving them to increasingly sophisticated and complex upper-floor management scenarios.
+                        </p>
+                    </div>
+                    <div class="project-media">
+                        <img src="assets/DamnYouLogo.png" alt="Damn You Manager Logo">
+                    </div>
+                </div>
+
+                <div class="internal-link-btn fade-in" data-target="gallery-view">
+                    <i class="ph ph-image"></i><span>Proceed to Gallery Showcase</span><i class="ph ph-arrow-right arrow"></i>
+                </div>
+            </section>
+        </div>
+
+        <div id="gallery-view" class="view">
+            <section class="text-column wide-column">
+                <h1 class="section-header fade-in">Visual Gallery & Environmental Design</h1>
+                <p class="body-text fade-in">
+                    Please review this curated selection of visual developments, architectural renders, and environmental designs across my practical projects.
+                </p>
+
+                <div class="gallery-masonry fade-in">
+                    <div class="gallery-item"><img src="assets/helicopters_close.png" alt="Helicopters Close"><div class="gallery-caption"><span class="img-title">CallSignDJ (001)</span><div class="img-tags"><span class="tag"><i class="ph ph-game-controller"></i> Game</span><span class="tag"><i class="ph ph-cube"></i> Unreal Engine</span></div></div></div>
+                    <div class="gallery-item"><img src="assets/telCommAndTents.png" alt="TelComm and Tent"><div class="gallery-caption"><span class="img-title">CallSignDJ (001)</span><div class="img-tags"><span class="tag"><i class="ph ph-game-controller"></i> Game</span><span class="tag"><i class="ph ph-cube"></i> Unreal Engine</span></div></div></div>
+                    <div class="gallery-item"><img src="assets/tactical_clinic_env.png" alt="Tactical Clinic Environment"><div class="gallery-caption"><span class="img-title">CallSignDJ (001)</span><div class="img-tags"><span class="tag"><i class="ph ph-game-controller"></i> Game</span><span class="tag"><i class="ph ph-cube"></i> Unreal Engine</span></div></div></div>
+                    <div class="gallery-item"><img src="assets/tentin.png" alt="Tent Interior"><div class="gallery-caption"><span class="img-title">CallSignDJ (001)</span><div class="img-tags"><span class="tag"><i class="ph ph-game-controller"></i> Game</span><span class="tag"><i class="ph ph-cube"></i> Unreal Engine</span></div></div></div>
+                    <div class="gallery-item"><img src="assets/staff_lounge1.png" alt="Staff Lounge"><div class="gallery-caption"><span class="img-title">Damn You, Manager!</span><div class="img-tags"><span class="tag"><i class="ph ph-game-controller"></i> Game</span><span class="tag"><i class="ph ph-cube"></i> Unreal Engine</span></div></div></div>
+                    <div class="gallery-item"><img src="assets/WIPBAR.png" alt="WIP Bar"><div class="gallery-caption"><span class="img-title">Rustic Bar</span><div class="img-tags"><span class="tag"><i class="ph ph-map-trifold"></i> Project</span><span class="tag"><i class="ph ph-bounding-box"></i> Blender</span></div></div></div>
+                    <div class="gallery-item"><img src="assets/bar3.png" alt="Bar View 3"><div class="gallery-caption"><span class="img-title">Rustic Bar</span><div class="img-tags"><span class="tag"><i class="ph ph-map-trifold"></i> Project</span><span class="tag"><i class="ph ph-bounding-box"></i> Blender</span></div></div></div>
+                    <div class="gallery-item"><img src="assets/bar4.png" alt="Bar View 4"><div class="gallery-caption"><span class="img-title">Rustic Bar</span><div class="img-tags"><span class="tag"><i class="ph ph-map-trifold"></i> Project</span><span class="tag"><i class="ph ph-bounding-box"></i> Blender</span></div></div></div>
+
+                    <div class="gallery-item"><img src="assets/BED3DS.png" alt="Bedroom 3DS Max"><div class="gallery-caption"><span class="img-title">Bedroom Interior Design</span><div class="img-tags"><span class="tag"><i class="ph ph-map-trifold"></i> Project</span><span class="tag"><i class="ph ph-selection-background"></i> 3DS Max</span></div></div></div>
+                    <div class="gallery-item"><img src="assets/infinite_hallway1.png" alt="Infinite Hallway"><div class="gallery-caption"><span class="img-title">Damn You, Manager!</span><div class="img-tags"><span class="tag"><i class="ph ph-game-controller"></i> Game</span><span class="tag"><i class="ph ph-cube"></i> Unreal Engine</span></div></div></div>
+                </div>
+
+                <div class="internal-link-btn fade-in" data-target="cv-view">
+                    <i class="ph ph-file-text"></i><span>Review Curriculum Vitae</span><i class="ph ph-arrow-right arrow"></i>
+                </div>
+
+            </section>
+        </div>
+
+        <div id="cv-view" class="view">
+            <section class="text-column wide-column">
+                <h1 class="section-header fade-in">Curriculum Vitae</h1>
+
+                <div class="cv-layout fade-in">
+                    <div class="cv-left">
+                        <div class="cv-block">
+                            <h2 class="cv-name">Enriko Straubis</h2>
+                            <ul class="cv-contact-list">
+                                <li><i class="ph ph-calendar-blank"></i> 22-11-2009</li>
+                                <li><i class="ph ph-map-pin"></i> Hull, HU9 2JP</li>
+                                <li><i class="ph ph-phone"></i> (+44) 07383 88 22 83</li>
+                                <li><i class="ph ph-envelope-simple"></i> enrikostraubis@gmail.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-block">
+                            <h3 class="cv-sub-header">Soft Skills</h3>
+                            <ul class="cv-bullet-list">
+                                <li>Meticulous & rigorous error checking</li>
+                                <li>Highly punctual & operationally enthusiastic</li>
+                                <li>Technically adaptable & team-oriented</li>
+                                <li>Natural leadership capabilities</li>
+                                <li>Critical problem solving</li>
+                                <li>Effective client communication</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-block">
+                            <h3 class="cv-sub-header">Certifications</h3>
+                            <ul class="cv-bullet-list">
+                                <li>Microsoft C# Foundational Certification</li>
+                                <li>Harvard CS50 (Intro to Computer Science)</li>
+                                <li>Google Foundational Cybersecurity</li>
+                                <li>Johns Hopkins/Coursera Psychological First Aid</li>
+                                <li>Advanced AED & First Aid</li>
+                                <li>FSA Food Allergy & Intolerance Training</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-block">
+                            <h3 class="cv-sub-header">Athletics & Disciplines</h3>
+                            <ul class="cv-bullet-list">
+                                <li>Jujitsu No-Gi (Blue Belt)</li>
+                                <li>Rugby League (Myton Warriors)</li>
+                                <li>East vs. West Hull (1x Winner, 1x Participant)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cv-right">
+                        <div class="cv-block">
+                            <h3 class="cv-sub-header">Professional Statement</h3>
+                            <p class="cv-text">
+                                A highly practical and results-driven individual characterized by a direct, industrious approach to complex tasks. Possesses a proven readiness to initiate operations promptly and seamlessly integrate into professional environments. Demonstrates intrinsic leadership capabilities and team cohesion, actively cultivated through competitive team sports. Committed to executing duties with precision, technical adaptability, and zero operational friction.
+                            </p>
+                        </div>
+
+                        <div class="cv-block">
+                            <h3 class="cv-sub-header">Work Experience</h3>
+                            <div class="cv-experience">
+                                <div class="exp-header"><span class="exp-title">General Labourer & Assistant Plasterer</span><span class="exp-date">21/11/2024 – 30/12/2025</span></div>
+                                <span class="exp-company">MUD ON WALLS LTD | Hull (Part-time)</span>
+                                <p class="cv-text">Facilitated site operations through the rigorous handling and transport of heavy materials, including plasterboard and foundational supplies. Gained direct, practical experience in core plastering techniques, ensuring high standards of physical endurance and site safety.</p>
+                            </div>
+                            <div class="cv-experience">
+                                <div class="exp-header"><span class="exp-title">Detailing Technician & Customer Service</span><span class="exp-date">20/03/2024 – 08/07/2024</span></div>
+                                <span class="exp-company">Star! Car wash LTD. | Hull (Part-time)</span>
+                                <p class="cv-text">Executed comprehensive vehicle detailing operations, including high-pressure jet washing and specialized tire degreasing. Delivered medium-to-high-level client communications, ensuring customer satisfaction while gaining practical insights into frontline business operations and service scalability.</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-block">
+                            <h3 class="cv-sub-header">Education</h3>
+                            <div class="cv-experience">
+                                <div class="exp-header"><span class="exp-title">Independent Academic Study (Homeschooled)</span><span class="exp-date">07/10/2024 – Present</span></div>
+                                <span class="exp-company">Hull</span>
+                            </div>
+                            <div class="cv-experience">
+                                <div class="exp-header"><span class="exp-title">Secondary Education</span><span class="exp-date">20/09/2021 – 07/10/2024</span></div>
+                                <span class="exp-company">Malet Lambert School | Hull, HU8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="internal-link-btn fade-in" data-target="ending-view" style="margin-top: 40px;">
+                    <i class="ph ph-flag-checkered"></i><span>Proceed to Concluding Remarks</span><i class="ph ph-arrow-right arrow"></i>
+                </div>
+            </section>
+        </div>
+
+        <div id="ending-view" class="view">
+            <section class="text-column">
+                <h1 class="section-header fade-in">Concluding Remarks</h1>
+                
+                <p class="body-text fade-in">
+                    Thank you for taking the time to review this comprehensive portfolio. I trust this documentation adequately demonstrates my technical proficiencies, analytical methodology, and practical readiness for the BTEC L2 Art & Design program at Bishop Burton College. 
+                </p>
+                
+                <p class="body-text fade-in">
+                    I remain entirely open to critical feedback, academic assessment, and any further inquiries regarding the next steps in the admissions process. Should you require immediate correspondence, my direct contact details are provided below.
+                </p>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-row">
+                        <i class="ph ph-phone"></i>
+                        <span>(+44) 07383 88 22 83</span>
+                    </div>
+                    <div class="contact-row">
+                        <i class="ph ph-envelope-simple"></i>
+                        <span>enrikostraubis@gmail.com</span>
+                    </div>
+                </div>
+
+                <p class="body-text fade-in">
+                    For an extended look at my visual developments and higher-fidelity 3D assets, please review my external ArtStation repository:
+                </p>
+
+                <a href="https://www.artstation.com/sheii" target="_blank" class="horizontal-link-card fade-in">
+                    <div class="thumb-container">
+                        <img src="assets/logoArt1.png" alt="ArtStation Profile">
+                    </div>
+                    <div class="card-text-content">
+                        <span class="card-title">ArtStation Repository</span>
+                        <span class="card-sub">Extended Visual Portfolio & 3D Assets</span>
+                    </div>
+                </a>
+
+                <div class="ending-footer fade-in">
+                    <div class="internal-link-btn" data-target="welcome-view">
+                        <i class="ph ph-arrow-left arrow-left"></i>
+                        <span>Return to Welcome Matrix</span>
+                    </div>
+                    <span class="sign-off">Enriko Straubis — APEL Portfolio 2026</span>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
