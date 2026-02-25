@@ -101,12 +101,7 @@ const chatBox = document.getElementById('chat-box');
 const aiGreeting = document.getElementById('ai-greeting');
 const editLabel = document.getElementById('edit-label'); // New Edit Label
 
-// Obfuscated key using chunk concatenation to bypass GitHub scanners flawlessly
-const _p1 = "AIzaSyCdl";
-const _p2 = "YXaEl6p_dV";
-const _p3 = "gMRb4nsmd";
-const _p4 = "TiLSao_5_go";
-const API_KEY = _p1 + _p2 + _p3 + _p4;
+const API_KEY = SyDBJPM7i1p9vLoruNT68"; 
 
 // MASSIVELY EXPANDED KNOWLEDGE BASE & STRICT TONE RULES
 const systemInstructionText = `
